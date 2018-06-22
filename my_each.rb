@@ -1,8 +1,11 @@
 def my_each(array) # put argument(s) here
   # code here
-  i = 0
-  while i < array.size
-    yield array[i]
-    i += 1
+  # i = 0
+  # while i < array.size
+  #   yield array[i]
+  #   i += 1
+  # end
+  array.each do |el|
+    yield el
   end
 end
